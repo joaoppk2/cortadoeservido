@@ -1,0 +1,13 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TikTok login</title><link rel="stylesheet" href="style.css"></head><body>
+<h1>Cortado e Servido Uploader</h1>
+<p id="msg">Reading the authorization...</p>
+<p><code id="code" style="word-break:break-all;font-size:1.1em"></code></p>
+<script>
+var q=new URLSearchParams(location.search),c=q.get('code'),e=q.get('error');
+var m=document.getElementById('msg');
+if(c){m.textContent='Autorizado. Copie o código abaixo e cole no Claude / Authorized, copy this code:';document.getElementById('code').textContent=c;}
+else if(e){m.textContent='Erro / Error: '+e+' '+(q.get('error_description')||'');}
+else{m.textContent='Nenhum código recebido / No code received.';}
+</script>
+<footer>Contact: ojoaomv@gmail.com</footer></body></html>
