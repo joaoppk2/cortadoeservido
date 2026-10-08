@@ -1,2 +1,32 @@
-body{font-family:system-ui,sans-serif;max-width:720px;margin:40px auto;padding:0 16px;line-height:1.6;color:#222;background:#fff}
-h1{font-size:1.6em}h2{font-size:1.2em;margin-top:1.6em}a{color:#c00}footer{margin-top:3em;font-size:.9em;color:#666}
+:root{--amarelo:#ffe600;--preto:#0b0b0b;--cinza:#5c5c5c;--linha:#e6e6e6}
+*{box-sizing:border-box}
+body{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;margin:0;line-height:1.6;color:#222;background:#fff}
+header.topo{background:var(--amarelo);border-bottom:3px solid var(--preto)}
+.topo .dentro{display:flex;align-items:center;gap:14px;flex-wrap:wrap;padding-top:12px;padding-bottom:12px}
+.marca{display:flex;align-items:center;gap:10px;font-weight:800;color:var(--preto);text-decoration:none;font-size:1.05em}
+.marca img{width:40px;height:40px;border-radius:9px;border:2px solid var(--preto);display:block}
+nav{margin-left:auto;display:flex;gap:4px 16px;flex-wrap:wrap}
+nav a{color:var(--preto);text-decoration:none;font-weight:600;font-size:.95em}
+nav a:hover,nav a[aria-current]{text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:2px}
+.dentro,main,footer{max-width:820px;margin:0 auto;padding-left:16px;padding-right:16px}
+main{padding-top:8px;padding-bottom:24px}
+.capa{display:flex;gap:24px;align-items:center;flex-wrap:wrap;padding:28px 0 8px}
+.capa img{width:132px;height:132px;border-radius:26px;border:3px solid var(--preto)}
+.capa div{flex:1;min-width:260px}
+h1{font-size:1.8em;line-height:1.2;margin:.6em 0 .4em}
+h2{font-size:1.25em;margin-top:2em;padding-bottom:.25em;border-bottom:2px solid var(--amarelo)}
+h3{font-size:1.02em;margin:0 0 .2em}
+a{color:#b00000}
+.sub{font-size:1.1em;color:var(--cinza);margin:0}
+.botoes{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+.botao{background:var(--preto);color:#fff;text-decoration:none;font-weight:700;padding:9px 16px;border-radius:8px}
+.botao.claro{background:#fff;color:var(--preto);border:2px solid var(--preto);padding:7px 14px}
+.grade{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;padding:0;margin:1em 0;list-style:none}
+.grade li{border:1px solid var(--linha);border-radius:12px;padding:14px 16px;background:#fafafa}
+.grade p{margin:0;font-size:.95em;color:#444}
+ol.passos{padding-left:1.3em}ol.passos li{margin-bottom:.6em}
+table{border-collapse:collapse;width:100%;font-size:.95em}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--linha);vertical-align:top}
+code{background:#f3f3f3;padding:1px 5px;border-radius:4px;font-size:.92em}
+footer{margin-top:2em;padding-top:18px;padding-bottom:36px;border-top:1px solid var(--linha);font-size:.9em;color:var(--cinza)}
+footer a{color:var(--cinza)}

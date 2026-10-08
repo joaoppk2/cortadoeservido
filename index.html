@@ -1,10 +1,44 @@
-<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Cortado e Servido Uploader</title><link rel="stylesheet" href="style.css"></head><body>
-<h1>Cortado e Servido Uploader</h1>
-<p>Ferramenta pessoal e privada do canal <a href="https://www.youtube.com/@cortadoeservido">Cortado e Servido</a> no YouTube.
-Ela envia para o próprio canal os Shorts editados no computador do dono do canal e agenda a publicação deles.</p>
-<p>Não é um serviço público: não há cadastro, login de terceiros nem acesso a dados de outros usuários ou canais.</p>
-<h2>English</h2>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cortado e Servido Uploader</title><meta name="description" content="Cortado e Servido Uploader: the publishing tool of the Cortado e Servido podcast clips channel for TikTok and YouTube."><link rel="icon" href="favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png"><link rel="apple-touch-icon" href="apple-touch-icon.png"><link rel="stylesheet" href="style.css"></head><body>
+<header class="topo"><div class="dentro"><a class="marca" href="index.html"><img src="icon-512.png" alt="Cortado e Servido Uploader icon" width="40" height="40">Cortado e Servido Uploader</a><nav><a href="index.html" aria-current="page">Home</a><a href="tiktok.html">TikTok</a><a href="index.html#how">How it works</a><a href="tiktok-privacidade.html">Privacy Policy</a><a href="tiktok-termos.html">Terms of Service</a><a href="index.html#contact">Contact</a></nav></div></header>
+<main>
+<section class="capa"><img src="icon-512.png" alt="Cortado e Servido Uploader app icon" width="132" height="132">
+<div><h1>Cortado e Servido Uploader</h1>
+<p class="sub">The publishing tool of <strong>Cortado e Servido</strong>, a Brazilian channel of short podcast clips.
+It sends the clips edited by the channel owner to the channel's own TikTok and YouTube accounts.</p>
+<div class="botoes"><a class="botao" href="tiktok.html">Uploader for TikTok</a><a class="botao claro" href="#how">How it works</a></div></div></section>
+
+<h2 id="about">About</h2>
+<p>Cortado e Servido publishes short vertical clips (up to 3 minutes) taken from Brazilian podcasts, always crediting the original
+show and linking to the full episode. The clips are cut, captioned and reviewed on the owner's computer. This app is the last step:
+it takes a finished clip, shows it to the owner with its caption, and publishes it to the channel's own accounts.</p>
+<p>The app has one user, the owner of the channel. It is not a public service: there is no sign-up, and it never accesses
+data, videos or accounts of other people.</p>
+
+<h2 id="features">What the app does</h2>
+<ul class="grade">
+<li><h3>Connects the owner's account</h3><p>The owner signs in with TikTok Login Kit or Google and authorizes the app. Only the owner's own account is ever connected.</p></li>
+<li><h3>Shows the clip before posting</h3><p>A review screen shows the connected account (name and avatar), a preview of the video and its caption, which the owner can edit.</p></li>
+<li><h3>Leaves every choice to the owner</h3><p>On TikTok the owner picks the privacy level from the options the account allows and turns comments, Duet and Stitch on or off.</p></li>
+<li><h3>Publishes and keeps a record</h3><p>The video is uploaded with the platform's official API. The app keeps a local list of what was posted, so the same clip is never posted twice.</p></li>
+</ul>
+
+<h2 id="how">How it works</h2>
+<ol class="passos">
+<li><strong>Edit.</strong> The owner cuts the clip from a podcast episode, adds the title and subtitles, and writes the caption with credit to the original show.</li>
+<li><strong>Connect.</strong> The owner opens the app and signs in to the channel's account on the platform's own login page. The app receives an access token, stored only on the owner's computer.</li>
+<li><strong>Review.</strong> The app shows the account that will receive the video, the video preview and the caption. On TikTok the owner chooses who can see the post and which interactions are allowed.</li>
+<li><strong>Publish.</strong> The owner presses the publish button. The app uploads the file, waits for the platform to finish processing and shows the result.</li>
+</ol>
+
+<h2 id="platforms">Platforms</h2>
+<table><tr><th>Platform</th><th>Account</th><th>API used</th><th>Documents</th></tr>
+<tr><td>TikTok</td><td><a href="https://www.tiktok.com/@cortadoeservido">@cortadoeservido</a></td><td>Login Kit and Content Posting API</td>
+<td><a href="tiktok.html">App page</a> · <a href="tiktok-privacidade.html">Privacy Policy</a> · <a href="tiktok-termos.html">Terms of Service</a></td></tr>
+<tr><td>YouTube</td><td><a href="https://www.youtube.com/@cortadoeservido">@cortadoeservido</a></td><td>YouTube Data API v3 (videos.insert)</td>
+<td><a href="privacidade.html">Privacy Policy</a> · <a href="termos.html">Terms of Use</a></td></tr></table>
+
+<h2 id="youtube">YouTube</h2>
 <p>Private, single-user tool of the YouTube channel <a href="https://www.youtube.com/@cortadoeservido">Cortado e Servido</a>.
 It uploads Shorts edited locally by the channel owner to the owner's own channel and schedules their publication
 (YouTube Data API v3, videos.insert). It is not offered to anyone else and does not access data from other users or channels.</p>
@@ -12,4 +46,15 @@ It uploads Shorts edited locally by the channel owner to the owner's own channel
 Ao usá-la, você concorda com os <a href="https://www.youtube.com/t/terms">Termos de Serviço do YouTube</a>.</p>
 <p><a href="privacidade.html">Política de privacidade / Privacy policy</a> · <a href="termos.html">Termos de uso / Terms of use</a>
 · <a href="https://policies.google.com/privacy">Política de Privacidade do Google</a></p>
-<footer>Contato / Contact: ojoaomv@gmail.com</footer></body></html>
+
+<h2 id="pt">Português</h2>
+<p>Ferramenta pessoal e privada do canal <a href="https://www.youtube.com/@cortadoeservido">Cortado e Servido</a>, de cortes de podcasts brasileiros.
+Ela envia para o próprio canal no YouTube e para o próprio perfil no TikTok os cortes editados no computador do dono do canal, depois de ele
+conferir o vídeo, a legenda e as opções de privacidade.</p>
+<p>Não é um serviço público: não há cadastro, login de terceiros nem acesso a dados de outros usuários ou canais.</p>
+
+<h2 id="contact">Contact</h2>
+<p>Questions about the app, the channel or a clip: <a href="mailto:ojoaomv@gmail.com">ojoaomv@gmail.com</a>.<br>
+Channel: <a href="https://www.tiktok.com/@cortadoeservido">TikTok</a> · <a href="https://www.youtube.com/@cortadoeservido">YouTube</a></p>
+</main>
+<footer>Cortado e Servido Uploader · <a href="index.html">Home</a> · <a href="tiktok.html">TikTok</a> · <a href="tiktok-privacidade.html">Privacy Policy (TikTok)</a> · <a href="tiktok-termos.html">Terms of Service (TikTok)</a> · <a href="privacidade.html">Privacy Policy (YouTube)</a> · <a href="termos.html">Terms of Use (YouTube)</a><br>Contact: <a href="mailto:ojoaomv@gmail.com">ojoaomv@gmail.com</a></footer></body></html>

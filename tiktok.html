@@ -1,12 +1,45 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Cortado e Servido Uploader for TikTok</title><link rel="stylesheet" href="style.css"></head><body>
-<h1>Cortado e Servido Uploader for TikTok</h1>
+<title>Cortado e Servido Uploader for TikTok</title><meta name="description" content="How Cortado e Servido Uploader uses TikTok Login Kit and the Content Posting API to publish clips to the @cortadoeservido account."><link rel="icon" href="favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png"><link rel="apple-touch-icon" href="apple-touch-icon.png"><link rel="stylesheet" href="style.css"></head><body>
+<header class="topo"><div class="dentro"><a class="marca" href="index.html"><img src="icon-512.png" alt="Cortado e Servido Uploader icon" width="40" height="40">Cortado e Servido Uploader</a><nav><a href="index.html">Home</a><a href="tiktok.html" aria-current="page">TikTok</a><a href="index.html#how">How it works</a><a href="tiktok-privacidade.html">Privacy Policy</a><a href="tiktok-termos.html">Terms of Service</a><a href="index.html#contact">Contact</a></nav></div></header>
+<main>
+<section class="capa"><img src="icon-512.png" alt="Cortado e Servido Uploader app icon" width="132" height="132">
+<div><h1>Cortado e Servido Uploader for TikTok</h1>
+<p class="sub">Uploads and publishes the short podcast clips of the <a href="https://www.tiktok.com/@cortadoeservido">@cortadoeservido</a>
+channel to its own TikTok account.</p>
+<div class="botoes"><a class="botao" href="tiktok-privacidade.html">Privacy Policy</a><a class="botao claro" href="tiktok-termos.html">Terms of Service</a></div></div></section>
+
+<h2>What it is</h2>
 <p>Private, single-user tool of the TikTok account <a href="https://www.tiktok.com/@cortadoeservido">@cortadoeservido</a>.
 The account owner edits short clips (podcast cuts) on their own computer, and this tool uploads them to the owner's own TikTok
 account with the TikTok Content Posting API, with title, caption and privacy setting chosen by the owner.</p>
 <p>It is not offered to anyone else: there is no sign-up and no access to data from other TikTok users.</p>
+
+<h2>Posting a clip, step by step</h2>
+<ol class="passos">
+<li><strong>Sign in with TikTok.</strong> The owner opens the app and is sent to TikTok's login page (Login Kit). After authorizing, TikTok returns to the app with an access token for the owner's account.</li>
+<li><strong>Check the account.</strong> The posting screen shows the display name and avatar of the connected account, so the owner sees where the video will go.</li>
+<li><strong>Preview and caption.</strong> The screen plays the clip and shows its caption, which can be edited before posting.</li>
+<li><strong>Choose privacy and interactions.</strong> The owner selects the privacy level from the options TikTok returns for the account, and decides whether comments, Duet and Stitch are allowed.</li>
+<li><strong>Publish.</strong> The owner presses the publish button. The app uploads the video and shows the status reported by TikTok.</li>
+</ol>
+
+<h2>TikTok products and scopes</h2>
+<table><tr><th>Scope</th><th>Product</th><th>Why the app needs it</th></tr>
+<tr><td><code>user.info.basic</code></td><td>Login Kit</td><td>Show the name and avatar of the connected account on the posting screen.</td></tr>
+<tr><td><code>video.publish</code></td><td>Content Posting API</td><td>Publish the clip directly to the owner's account with the chosen settings.</td></tr>
+<tr><td><code>video.upload</code></td><td>Content Posting API</td><td>Send a clip to the owner's TikTok drafts, to be finished in the TikTok app.</td></tr></table>
+
+<h2>Content</h2>
+<p>The videos are clips of Brazilian podcasts, up to 3 minutes long, published according to the original creators' rules for clips.
+Every post credits the original show and points to the full episode.</p>
+
+<h2>Data</h2>
+<p>The access token stays on the owner's computer and is used only to post to the owner's account. The app does not collect or
+share data from any other TikTok user. Access can be revoked at any time in the TikTok app (Settings and privacy → Security → Manage app permissions).
+Details in the <a href="tiktok-privacidade.html">Privacy Policy</a>.</p>
+
 <h2>Português</h2>
 <p>Ferramenta pessoal do perfil <a href="https://www.tiktok.com/@cortadoeservido">@cortadoeservido</a> no TikTok. Envia para o
 próprio perfil os cortes editados no computador do dono da conta, usando a Content Posting API do TikTok.</p>
-<p><a href="tiktok-privacidade.html">Privacy policy</a> · <a href="tiktok-termos.html">Terms of service</a></p>
-<footer>Contact: ojoaomv@gmail.com</footer></body></html>
+</main>
+<footer>Cortado e Servido Uploader · <a href="index.html">Home</a> · <a href="tiktok.html">TikTok</a> · <a href="tiktok-privacidade.html">Privacy Policy (TikTok)</a> · <a href="tiktok-termos.html">Terms of Service (TikTok)</a> · <a href="privacidade.html">Privacy Policy (YouTube)</a> · <a href="termos.html">Terms of Use (YouTube)</a><br>Contact: <a href="mailto:ojoaomv@gmail.com">ojoaomv@gmail.com</a></footer></body></html>
