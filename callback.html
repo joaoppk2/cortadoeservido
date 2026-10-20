@@ -8,7 +8,7 @@
 <script>
 var q=new URLSearchParams(location.search),c=q.get('code'),e=q.get('error');
 var m=document.getElementById('msg');
-if(c){m.textContent='Autorizado. Copie o código abaixo e cole no Claude / Authorized, copy this code:';document.getElementById('code').textContent=c;}
+if(c){m.textContent='Authorized. Copy this code and paste it in the Cortado e Servido Uploader app / Autorizado: copie o código e cole no aplicativo.';document.getElementById('code').textContent=c;}
 else if(e){m.textContent='Erro / Error: '+e+' '+(q.get('error_description')||'');}
 else{m.textContent='Nenhum código recebido / No code received.';}
 </script>
